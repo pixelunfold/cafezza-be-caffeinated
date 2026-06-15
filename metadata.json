@@ -1,6 +1,0 @@
-{
-  "name": "Cafezza Be Caffeinated",
-  "description": "Late-night vegetarian cafe in Kudasan, Gandhinagar known for coffee and continental food.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
