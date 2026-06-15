@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Cafezza Be Caffeinated – Premium Coffee & Late-Night Cafe in Kudasan, Gandhinagar</title>
+  <meta name="description"
+    content="Experience Gandhinagar's favorite late-night vegetarian cafe! Cozy indoor bridge seating, creative coffees, rich continental food, and Swaminarayan & Jain options in Kudasan.">
+  <meta name="keywords"
+    content="Cafezza Be Caffeinated, Cafezza Gandhinagar, Late Night Cafe Kudasan, Siddhraj Z Square Cafe, Best Coffee Gandhinagar, Pizza Pasta Kudasan">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+
+  <!-- Google Fonts: Sora (modern geometric), Plus Jakarta Sans (body copy), Fraunces (serif accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons for modern, sharp UI indicators -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- MOBILE NAVIGATION DRAWER OVERLAY -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- STICKY HEADER -->
+  <header id="mainHeader">
+    <div class="header-container">
+      <a href="#home" class="logo" aria-label="Cafezza Be Caffeinated Home" style="display: flex; align-items: center; justify-content: flex-start; gap: 0.5rem; text-decoration: none;">
+        <img src="assets/logo.svg" alt="Cafezza Be Caffeinated Logo" style="height: 44px; width: auto; object-fit: contain; margin-top: -2px; filter: brightness(0) invert(1);" referrerpolicy="no-referrer">
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#home" class="nav-item active">Home</a>
+        <a href="#why-vibes" class="nav-item">Why Us</a>
+        <a href="#menu" class="nav-item">Menu</a>
+        <a href="#reviews" class="nav-item">Reviews</a>
+        <a href="#location" class="nav-item">Location</a>
+        <a href="#reserve" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="tel:+919879000097" class="header-phone-btn" aria-label="Call Cafezza">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="#reserve" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.85rem;">Book Table</a>
+      </div>
+
+      <!-- Hamburger toggle button -->
+      <button class="menu-trigger" id="menuTrigger" aria-label="Toggle Mobile Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE SIDE DRAWER -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close Menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="mobile-nav-links">
+      <a href="#home" class="mobile-nav-item">Home</a>
+      <a href="#why-vibes" class="mobile-nav-item">Why Us</a>
+      <a href="#menu" class="mobile-nav-item">Menu</a>
+      <a href="#gallery" class="mobile-nav-item">Gallery</a>
+      <a href="#reviews" class="mobile-nav-item">Reviews</a>
+      <a href="#location" class="mobile-nav-item">Location</a>
+      <a href="#reserve" class="mobile-nav-item">Contact</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="tel:+919879000097" class="header-phone-btn"
+        style="margin-bottom: 1rem; width: fit-content; border-radius: var(--radius-full); padding: 0 1.25rem; gap: 8px;">
+        <i class="fa-solid fa-phone"></i>
+        <span style="font-size: 0.9rem; font-weight: 600;">Call Us</span>
+      </a>
+      <p style="font-size: 0.8rem; color: var(--color-text-muted-light)">Siddhraz Z Square, Kudasan, Gandhinagar</p>
+      <div class="mobile-nav-socials">
+        <a href="https://www.instagram.com/cafezza_be_caffeinated/" target="_blank" rel="noopener" aria-label="Instagram"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/919879000097" target="_blank" rel="noopener" aria-label="WhatsApp"><i
+            class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://maps.app.goo.gl/Y7gbqLn6XVG3UtTBA" target="_blank" rel="noopener" aria-label="Google Maps"><i
+            class="fa-solid fa-map-location-dot"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN SECTIONS -->
+  <main>
+
+    <!-- SECTION 1: HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-bg-container">
+        <!-- Loaded premium cafe interior image -->
+        <img class="hero-bg" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=1920" alt="Cafezza Aesthetic Ambient Intersecting Seating" referrerpolicy="no-referrer">
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge reveal">
+            <i class="fa-solid fa-star"></i> Gandhinagar's Most Viral Bridge Café
+          </div>
+          <h1 class="reveal delay-1">Cafezza – Be <span>Caffeinated,</span> Be Happy.</h1>
+          <p class="hero-sub reveal delay-2">
+            Join us in savoring Kudasan's finest brews, late-night continental comfort food, and vibrant conversations in our highly aesthetic multi-level space. Open daily until <strong>1:45 AM</strong>.
+          </p>
+          <div class="hero-actions reveal delay-3">
+            <a href="#reserve" class="btn btn-primary">Reserve a Table <i class="fa-solid fa-calendar-days"></i></a>
+            <a href="#menu" class="btn btn-secondary">Explore Menu <i class="fa-solid fa-utensils"></i></a>
+          </div>
+        </div>
+
+        <!-- Info Strip overlayed on bottom of hero content -->
+        <div class="info-strip reveal delay-3" style="margin-top: 1rem;">
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-star"></i></div>
+            <div class="info-details">
+              <h4>★ 4.3 / 5 Rating</h4>
+              <p>Top Experience Cafe</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-users"></i></div>
+            <div class="info-details">
+              <h4>1,450+ Reviews</h4>
+              <p>On Google Maps</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+            <div class="info-details">
+              <h4>~ ₹800 Spend</h4>
+              <p>Average Cost for Two</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="info-details">
+              <h4>Kudasan, G-nagar</h4>
+              <p>Siddhraj Z Square</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: WHY CAFE VIBES (BENEFITS) -->
+    <section class="why-us" id="why-vibes">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-tag">Welcome to Cafezza Be Caffeinated</span>
+          <h2 class="section-title">Why Gandhinagar Loves <span>Our Vibe</span></h2>
+          <p class="section-desc">We combine premium custom-roasted espresso beans and late-night continental cuisine with an eye-catching architecture layout, defining the premium social hub.</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card reveal delay-1">
+            <div class="badge-icon"><i class="fa-solid fa-soap"></i></div>
+            <h3>Finest Coffee & Brews</h3>
+            <p>From mixed berry espresso variants to pistachio lattes and orange cold brews, every roast is extracted to pristine perfection.</p>
+          </div>
+
+          <div class="why-card reveal delay-2">
+            <div class="badge-icon"><i class="fa-solid fa-bridge"></i></div>
+            <h3>Unique "Bridge" Interior</h3>
+            <p>Our gorgeous architecture design split-level bridge layout creates cozy, visually stunning private conversation zones.</p>
+          </div>
+
+          <div class="why-card reveal delay-3">
+            <div class="badge-icon"><i class="fa-solid fa-seedling"></i></div>
+            <h3>Pure Vegetarian & Jain Menu</h3>
+            <p>Fully compliant Swaminarayan and Jain specialty options available so everyone gathers and dines worry-free.</p>
+          </div>
+
+          <div class="why-card reveal delay-1">
+            <div class="badge-icon"><i class="fa-solid fa-moon"></i></div>
+            <h3>Late-Night Haven</h3>
+            <p>Settle night cravings or pull study groups together in peace. We are happily open and serving daily until 1:45 AM.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SIGNATURE MENU SECTION -->
+    <section class="menu-section light-section" id="menu">
+      <div class="container">
+        <div class="menu-layout">
+
+          <!-- Left sticky content panel -->
+          <div class="menu-info reveal">
+            <span class="section-tag">Menu & Specialties</span>
+            <h2 class="section-title" style="color: var(--color-text-dark)">The Signature <span>Cafezza Experience</span></h2>
+            <div class="unlimited-badge">Average Spend: ₹800 For Two*</div>
+            <p class="section-desc" style="margin-bottom: 2rem;">Discover our creative, instagrammable combinations of rich espresso shots, thick cold drinks, fusion savory pasta roll ups, and decadent kunafa bakery treats.</p>
+
+            <div class="rules-list">
+              <div class="rule-item">
+                <i class="fa-solid fa-clock"></i>
+                <div class="rule-text">
+                  <h4 style="color: var(--color-text-dark)">Timings</h4>
+                  <p>Daily Operations: 11:00 AM – 1:45 AM (Late Night)</p>
+                </div>
+              </div>
+              <div class="rule-item">
+                <i class="fa-solid fa-heart"></i>
+                <div class="rule-text">
+                  <h4 style="color: var(--color-text-dark)">Dietary Versatility</h4>
+                  <p>Dedicated Swaminarayan and Jain selections ready on custom request. Just let your barista know!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="disclaimer-badge">
+              <i class="fa-solid fa-circle-info"></i>
+              <p>Pricing and seasonal availability subject to change. DM or WhatsApp us to ask about today's fresh special pastries or reserve tables.</p>
+            </div>
+          </div>
+
+          <!-- Right filterable menu grid -->
+          <div class="menu-display reveal delay-1">
+            <div class="menu-tabs">
+              <button class="tab-btn active" data-target="unlimited">Specialty Coffees & Brews</button>
+              <button class="tab-btn" data-target="alacarte">Continental Savory Mains</button>
+              <button class="tab-btn" data-target="chinese">Bakery & Sweet Desserts</button>
+            </div>
+
+            <!-- Tab 1: Specialty Coffees & Brews -->
+            <div class="menu-grid active" id="unlimited">
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Mixed Berry Espresso</h4>
+                  <span class="menu-item-price">New Hero</span>
+                </div>
+                <p class="menu-item-desc">A double espresso shot poured delicately over sweet, premium mixed berry puree and sparkling iced undertones.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Black Orange Cold Brew</h4>
+                  <span class="menu-item-price">Aromatic</span>
+                </div>
+                <p class="menu-item-desc">Slow-steeped organic cold brew combined with crisp, sweet orange citrus juice for a bright citrus kick.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Pistachio Latte</h4>
+                  <span class="menu-item-price">Best Seller</span>
+                </div>
+                <p class="menu-item-desc">Silky espresso combined with freshly steamed milk and an elegant layer of toasted premium pistachio cream dressing.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Ferrero Hazelnut Shake</h4>
+                  <span class="menu-item-price">Indulgent</span>
+                </div>
+                <p class="menu-item-desc">Creamy ice cream shake blended with rich hazelnut butter, cocoa, and real crushed Ferrero Rocher chocolates.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Premium Espresso & Pour-Overs</h4>
+                  <span class="menu-item-price">Coffee Core</span>
+                </div>
+                <p class="menu-item-desc">Carefully sourced single-origin 100% Arabica beans, precisely extracted by skilled baristas to ensure smooth crema.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Chocolate Pin Specialty</h4>
+                  <span class="menu-item-price">Signature</span>
+                </div>
+                <p class="menu-item-desc">A deep-chocolate sweet specialty drink decorated with fine cocoa dust, loved by kids and dessert purists alike.</p>
+              </div>
+            </div>
+
+            <!-- Tab 2: Continental Savory Mains -->
+            <div class="menu-grid" id="alacarte">
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Lasagna Roll Ups</h4>
+                  <span class="menu-item-price">Chef Special</span>
+                </div>
+                <p class="menu-item-desc">Classic pasta sheets stuffed with garden-fresh veggies and dense mozzarella cheese, baked to bubble in marinara.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Edamame Truffle Hummus & Lavash</h4>
+                  <span class="menu-item-price">Gourmet</span>
+                </div>
+                <p class="menu-item-desc">Vibrant creamed edamame hummus laced heavily with aromatic truffle oil beside crispy flatbread baked lavash strips.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Chilli Garlic Chimichurri Noodles</h4>
+                  <span class="menu-item-price">Fusion Favorite</span>
+                </div>
+                <p class="menu-item-desc">Wok-tossed noodles packed with sizzling garlic, red chilies, and a proprietary fresh green herb chimichurri blend.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Jolokia Spicy Pasta</h4>
+                  <span class="menu-item-price">Extreme Spice</span>
+                </div>
+                <p class="menu-item-desc">Al dente penne pasta wrapped in an intensely spicy ghost pepper (bhut jolokia) cream reduction sauce.</p>
+              </div>
+            </div>
+
+            <!-- Tab 3: Bakery & Sweet Desserts -->
+            <div class="menu-grid" id="chinese">
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Pistachio Kunafa Brownie</h4>
+                  <span class="menu-item-price">Trending</span>
+                </div>
+                <p class="menu-item-desc">Fudgy baked chocolate brownie layered with crispy buttered kunafa strands and luscious sweet pistachio cream topping.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Premium Tiramisu Brownie</h4>
+                  <span class="menu-item-price">Classic Fusion</span>
+                </div>
+                <p class="menu-item-desc">Classic espresso-infused Italian coffee ladyfinger cake elements combined over a rich brownie batter baseline.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Fresh Blueberry Cheesecake</h4>
+                  <span class="menu-item-price">Rich Creamy</span>
+                </div>
+                <p class="menu-item-desc">Thick, dense New York style baked cheesecake layered cleanly on crumbly biscuit crust with tangy organic blueberry compote.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Chocolate Croissant & French Toast</h4>
+                  <span class="menu-item-price">Warm Baked</span>
+                </div>
+                <p class="menu-item-desc">Flaky, premium laminated buttery pastries loaded with melted dark Belgian chocolate core, toasted warm.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: GALLERY SECTION -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="reveal" style="text-align: center; margin-bottom: 4rem;">
+          <span class="section-tag">Visual Vibes</span>
+          <h2 class="section-title">Step Inside <span>Our Space</span></h2>
+          <p class="section-desc" style="margin-left: auto; margin-right: auto;">Explore photos of our architectural bridge-themed dining arrays and beautifully styled plates daily.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item reveal delay-1">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=800" alt="Cafezza Specialty Coffee Pouring with Premium Crema" referrerpolicy="no-referrer">
+            <div class="gallery-overlay">
+              <i class="fa-brands fa-instagram"></i>
+              <span>Fine Brews</span>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal delay-2">
+            <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&q=80&w=800" alt="Cafezza Bridge Architecture Split-Level Layout Seating" referrerpolicy="no-referrer">
+            <div class="gallery-overlay">
+              <i class="fa-brands fa-instagram"></i>
+              <span>Modern Design Setup</span>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal delay-3">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=800" alt="Cafezza Continental Platters and Fresh Hummus Lavash" referrerpolicy="no-referrer">
+            <div class="gallery-overlay">
+              <i class="fa-brands fa-instagram"></i>
+              <span>Gourmet Bites</span>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal delay-1">
+            <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&q=80&w=800" alt="Cafezza Evening Aesthetic Cozy Lighting Layout" referrerpolicy="no-referrer">
+            <div class="gallery-overlay">
+              <i class="fa-brands fa-instagram"></i>
+              <span>Aesthetic Corners</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-cta-block reveal">
+          <h3>Love What You See?</h3>
+          <p>Join over 8,000 coffee enthusiasts following our feed for daily food reels, late-night gatherings, and new releases.</p>
+          <a href="https://www.instagram.com/cafezza_be_caffeinated/" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fa-brands fa-instagram"></i> Follow @cafezza_be_caffeinated
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: REVIEWS SECTION -->
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="reviews-layout">
+
+          <!-- Left Panel: Large Aggregate Review Display -->
+          <div class="rating-summary-card reveal">
+            <span class="section-tag" style="margin-bottom: 0.5rem;">Google Maps</span>
+            <div class="rating-number">4.3</div>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="rating-count">Based on 1,455+ Reviews</div>
+            <div class="rating-source">
+              <i class="fa-brands fa-google"></i> Most Popular Late-Night Spot in Kudasan
+            </div>
+          </div>
+
+          <!-- Right Panel: Slider Carousel -->
+          <div class="reviews-carousel-container reveal delay-1">
+            <div class="reviews-track" id="reviewsTrack">
+
+              <!-- Review Slide 1 -->
+              <div class="review-slide">
+                <div class="review-card">
+                  <div class="review-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="review-content">
+                    "Hands down the most aesthetic cafe in Gandhinagar! The architectural bridge layout is incredibly unique and peaceful. Their Pistachio Latte and Chilli Garlic Chimichurri Noodles are divine. Highly recommended!"
+                  </p>
+                  <div class="review-author">
+                    <div class="author-avatar">AP</div>
+                    <div class="author-info">
+                      <h4>Anshul Patel</h4>
+                      <p>Local Guide • 112 Reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review Slide 2 -->
+              <div class="review-slide">
+                <div class="review-card">
+                  <div class="review-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="review-content">
+                    "Terrific evening spot. The lighting is cozy and perfect for photos. They stay open until 1:45 AM which is a lifesaver for late-night coffee cravings, and they customize Jain and Swaminarayan options flawlessly."
+                  </p>
+                  <div class="review-author">
+                    <div class="author-avatar">SS</div>
+                    <div class="author-info">
+                      <h4>Siddharth Shah</h4>
+                      <p>Kudasan Resident • 43 Reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review Slide 3 -->
+              <div class="review-slide">
+                <div class="review-card">
+                  <div class="review-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <p class="review-content">
+                    "We celebrated my friend's birthday party here. The desserts, especially the Pistachio Kunafa Brownie and the Biscoff Cheesecake, are incredible and plated beautifully. Excellent, friendly service."
+                  </p>
+                  <div class="review-author">
+                    <div class="author-avatar">MJ</div>
+                    <div class="author-info">
+                      <h4>Meera Joshi</h4>
+                      <p>Student, DAIICT • 19 Reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review Slide 4 -->
+              <div class="review-slide">
+                <div class="review-card">
+                  <div class="review-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="review-content">
+                    "If you value high-quality espresso and creative drinks like the Mixed Berry Espresso and Black Orange Cold Brew, this is your place. The interior vibe is extremely modern and professional."
+                  </p>
+                  <div class="review-author">
+                    <div class="author-avatar">KD</div>
+                    <div class="author-info">
+                      <h4>Kunal Deshmukh</h4>
+                      <p>IT Professional • 32 Reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Controls (dots & arrow triggers) -->
+            <div class="carousel-controls">
+              <div class="carousel-dots" id="carouselDots">
+                <!-- Javascript will insert dots here dynamically -->
+              </div>
+              <div class="carousel-arrows">
+                <button class="arrow-btn" id="prevBtn" aria-label="Previous Review"><i
+                    class="fa-solid fa-chevron-left"></i></button>
+                <button class="arrow-btn" id="nextBtn" aria-label="Next Review"><i
+                    class="fa-solid fa-chevron-right"></i></button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: LOCATION & HOURS SECTION -->
+    <section class="location-hours" id="location">
+      <div class="container">
+        <div class="location-layout">
+
+          <div class="location-details-box reveal">
+            <span class="section-tag">Find Us</span>
+            <h2 class="section-title">Where We Are <span>Caffeinating</span></h2>
+            <p class="section-desc" style="margin-bottom: 2.5rem;">Siddhraj Z Square is situated directly within Gandhinagar's retail and academic hub, with comfortable underground visitor parking.</p>
+
+            <div class="contact-card-list">
+              <!-- Address Item -->
+              <div class="contact-card-item">
+                <div class="contact-card-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                <div class="contact-card-info">
+                  <h4>Address</h4>
+                  <p><a href="https://maps.app.goo.gl/Y7gbqLn6XVG3UtTBA" target="_blank" rel="noopener">Siddhraz Z Square, 3rd Floor, Podar International School Road, Kudasan, Gandhinagar, Gujarat 382421 <i
+                        class="fa-solid fa-arrow-up-right-from-square"
+                        style="font-size: 0.75rem; margin-left: 4px; color: var(--color-accent-terracotta);"></i></a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Hours Item -->
+              <div class="contact-card-item">
+                <div class="contact-card-icon"><i class="fa-solid fa-clock"></i></div>
+                <div class="contact-card-info">
+                  <h4>Opening Hours</h4>
+                  <p>Open Daily: 11:00 AM – 1:45 AM (Late Night)</p>
+                  <p style="font-size: 0.85rem; color: var(--color-accent-terracotta);">Special dessert and espresso services available throughout late-hours</p>
+                </div>
+              </div>
+
+              <!-- Contact Item -->
+              <div class="contact-card-item">
+                <div class="contact-card-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                <div class="contact-card-info">
+                  <h4>Contact Info</h4>
+                  <p>Call: <a href="tel:+919879000097">+91 98790 00097</a></p>
+                  <p>WhatsApp Inquiries: <a
+                      href="https://wa.me/919879000097?text=Hi%20Cafezza!%20I'd%20like%20to%20inquire%20about%20your%20menu%20and%20timings."
+                      target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Styled Google Maps Placeholder/Iframe -->
+          <div class="map-container reveal delay-1">
+            <!-- Embedding map location via direct Google Maps search query embed -->
+            <iframe
+              src="https://maps.google.com/maps?q=Cafezza%20Be%20Caffeinated,%20Siddhraj%20Z%20Square,%20Kudasan,%20Gandhinagar&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Cafezza Map Location Kudasan">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: RESERVATION & CONTACT SECTION -->
+    <section class="booking-section" id="reserve">
+      <div class="container">
+        <div class="booking-layout">
+
+          <div class="booking-copy reveal">
+            <span class="section-tag">Reservations</span>
+            <h2 class="section-title">Gather Your <span>Friends</span></h2>
+            <p class="section-desc">Plan academic study sessions, high-energy birthday parties, or private candlelit coffee dates. Connect immediately over WhatsApp or telephone.</p>
+
+            <div class="quick-connect-buttons">
+              <a href="https://wa.me/919879000097?text=Hi%20Cafezza!%20I%20want%20to%20reserve%20a%20table%20for%20my%20group."
+                target="_blank" rel="noopener" class="quick-btn">
+                <div class="quick-btn-icon whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="quick-btn-text">
+                  <h4>Message on WhatsApp</h4>
+                  <p>Get instant response in under 5 minutes</p>
+                </div>
+              </a>
+              <a href="tel:+919879000097" class="quick-btn">
+                <div class="quick-btn-icon phone"><i class="fa-solid fa-phone-flip"></i></div>
+                <div class="quick-btn-text">
+                  <h4>Call Front Desk</h4>
+                  <p>Available daily from 11:00 AM – 1:45 AM</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Reservation Form Block -->
+          <div class="booking-form-box reveal delay-1">
+            <h3>Book a Table</h3>
+            <form id="reservationForm">
+
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name *</label>
+                <input type="text" id="fullName" class="form-input" placeholder="Enter your name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phoneNumber" class="form-label">Phone Number *</label>
+                <input type="tel" id="phoneNumber" class="form-input" placeholder="e.g. +91 98765 43210" required>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="reserveDate" class="form-label">Date *</label>
+                  <input type="date" id="reserveDate" class="form-input" required>
+                </div>
+                <div class="form-group">
+                  <label for="reserveTime" class="form-label">Time Slot *</label>
+                  <select id="reserveTime" class="form-input" required>
+                    <option value="" disabled selected>Select time</option>
+                    <option value="12:00 PM">12:00 PM (Lunch)</option>
+                    <option value="2:00 PM">2:00 PM (Afternoon)</option>
+                    <option value="4:00 PM">4:00 PM (High Tea)</option>
+                    <option value="6:00 PM">6:00 PM (Evening)</option>
+                    <option value="8:00 PM">8:00 PM (Dinner)</option>
+                    <option value="10:00 PM">10:00 PM (Late Night)</option>
+                    <option value="12:00 AM">12:00 AM (Late Night)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="guestCount" class="form-label">Number of Guests *</label>
+                <select id="guestCount" class="form-input" required>
+                  <option value="" disabled selected>Select headcount</option>
+                  <option value="2 People">2 People</option>
+                  <option value="3-4 People">3-4 People</option>
+                  <option value="5-6 People">5-6 People</option>
+                  <option value="7-10 People">7-10 People</option>
+                  <option value="10+ People (Party)">10+ People (Group/Party)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="specialRequest" class="form-label">Special Requests (Optional)</label>
+                <textarea id="specialRequest" class="form-input"
+                  placeholder="Mention birthday celebrations, food allergies, Swaminarayan/Jain choices, or Bridge seating preferences..."></textarea>
+              </div>
+
+              <div class="submit-container">
+                <button type="submit" class="btn btn-green" id="whatsappSubmitBtn"><i class="fa-brands fa-whatsapp"
+                    style="font-size: 1.25rem;"></i> Reserve via WhatsApp Chat</button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SUCCESS DIALOG POPUP -->
+  <div class="success-overlay" id="successOverlay">
+    <div class="success-card">
+      <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+      <h3>Request Sent!</h3>
+      <p id="successMessage">Thank you! We have received your booking request. Our team will contact you shortly to confirm your table.</p>
+      <button class="btn btn-primary" id="closeSuccessBtn">Perfect, see you soon!</button>
+    </div>
+  </div>
+
+  <!-- SECTION 8: FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <img src="assets/logo.svg" alt="Cafezza Be Caffeinated Logo" style="height: 48px; width: auto; object-fit: contain; margin-bottom: 1rem; filter: brightness(0) invert(1);" referrerpolicy="no-referrer">
+          <p>Gandhinagar's premium destination for unique bridge aesthetics, creative coffees, and late-night vegetarian comfort meals.</p>
+          <p style="font-size: 0.8rem; color: var(--color-text-muted-light);">© 2026 Cafezza Be Caffeinated. All rights reserved.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4 class="footer-links-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#why-vibes">Why Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4 class="footer-links-title">Our Concept</h4>
+          <ul class="footer-links-list">
+            <li><a href="#menu">Specialty Espresso</a></li>
+            <li><a href="#menu">Continental Delights</a></li>
+            <li><a href="#why-vibes">Bridge Seating</a></li>
+            <li><a href="#reserve">Group Bookings</a></li>
+            <li><a href="#location">Find Location</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-brand">
+          <h4 class="footer-links-title">Instagram Feed</h4>
+          <div class="footer-insta-preview">
+            <div class="footer-insta-img"><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=300" alt="Insta Post 1" referrerpolicy="no-referrer"></div>
+            <div class="footer-insta-img"><img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&q=80&w=300" alt="Insta Post 2" referrerpolicy="no-referrer"></div>
+            <div class="footer-insta-img"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=300" alt="Insta Post 3" referrerpolicy="no-referrer"></div>
+          </div>
+          <p style="font-size: 0.75rem; margin-top: 10px;"><a href="https://www.instagram.com/cafezza_be_caffeinated/"
+              target="_blank" rel="noopener" style="color: var(--color-accent-terracotta); font-weight: 600;"><i
+                class="fa-brands fa-instagram"></i> @cafezza_be_caffeinated</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>Built with ❤️ for Gandhinagar Foodies. Located at Siddhraj Z Square, Urjanagar, Kudasan.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/cafezza_be_caffeinated/" target="_blank" rel="noopener"
+            class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/919879000097" target="_blank" rel="noopener" class="footer-social-link"
+            aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://maps.app.goo.gl/Y7gbqLn6XVG3UtTBA" target="_blank" rel="noopener" class="footer-social-link"
+            aria-label="Google Maps"><i class="fa-solid fa-map-location-dot"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JQUERY CDN FOR ROBUST CAROUSEL & TABS INTERACTIVITY -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="crossorigin"></script>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
